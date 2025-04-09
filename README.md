@@ -19,7 +19,7 @@
 1. **Clone or Download the Repo**:
 
    ```bash
-   git clone https://github.com/your-username/WolfQuiz.git
+   git clone https://github.com/nbrown2000/WolfQuiz.git
    cd WolfQuiz
    ```
 
