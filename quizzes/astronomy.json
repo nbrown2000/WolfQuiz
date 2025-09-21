@@ -1,0 +1,64 @@
+{
+  "quiz_id": "b5ee0a1c-86c3-4088-bb69-f93d8a56559e",
+  "quiz_name": "Astronomy",
+  "quiz_description": "Take your chance at some typical astronomy questions.",
+  "question_selector_amount": 4,
+  "questions": [
+    {
+      "question_id": "1bd7e411-c287-4042-b90e-4de228a54ca7",
+      "question_text": "Which Planet is Known as the Red Planet?",
+      "is_true_false": false,
+      "answer": "Mars",
+      "false_answers": [
+        "Mercury",
+        "Neptune",
+        "Uranus"
+      ]
+    },
+    {
+      "question_id": "747834c8-4905-4399-ab88-1a2edb162374",
+      "question_text": "What is the largest planet in our solar system?",
+      "is_true_false": false,
+      "answer": "Jupiter",
+      "false_answers": [
+        "Titan",
+        "Sirius",
+        "Uranus"
+      ]
+    },
+    {
+      "question_id": "933b463e-9b20-4a34-a3c0-7480c01c6428",
+      "question_text": "Which planet is known for its prominent ring system?",
+      "is_true_false": false,
+      "answer": "Saturn",
+      "false_answers": [
+        "Uranus",
+        "Neptune",
+        "Black Hole"
+      ]
+    },
+    {
+      "question_id": "bbe549b3-2ee5-41a3-a68d-32c2fe25516e",
+      "question_text": "What is the closest star to Earth?",
+      "is_true_false": false,
+      "answer": "The Sun",
+      "false_answers": [
+        "Sirius",
+        "Titan",
+        "Betelgeuse"
+      ]
+    },
+    {
+      "question_id": "f4bd9d0a-35e1-4abc-8c7e-7484143bf1f2",
+      "question_text": "Which galaxy do we live in?",
+      "is_true_false": false,
+      "answer": "The Milky Way",
+      "false_answers": [
+        "Andromeda",
+        "Black Hole",
+        "Hydra"
+      ]
+    }
+  ],
+  "slug": "astronomy"
+}
