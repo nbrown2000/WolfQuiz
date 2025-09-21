@@ -37,36 +37,21 @@
 
 ---
 
-## 📥 Importing a Quiz from JSON
-
-You can use `import.py` to import questions into an existing quiz in the database.
-
-### How to Use
-
-1. Make sure a quiz with the target name already exists in the app by using the quiz creator button.
-2. Open `import.py` and locate this line:
-
-   ```python
-   QUIZ_NAME = "GBUS 325 Exam 3"
-   ```
-
-   Replace the value with the exact name of the quiz you want to import into.
-
-3. Your JSON file should be named `gbus325_exam1.json` or you can modify the filename in the script:
-
-   ```python
-   with open("gbus325_exam1.json", "r", encoding="utf-8") as file:
-   ```
-
-   *You can keep the name as-is if you like, or change it to your filename.*
-
-4. Run:
-
-   ```bash
-   python import.py
-   ```
-
 ### JSON Structure
+Initial Structure:
+```json
+{
+  "quiz_id": "fd582257-1848-55fc-b82c-9ce697ae6475",
+  "quiz_name": "MGT-350 Exam 1",
+  "quiz_description": "Chapters 1\u20135 combined: Managing & Performing, Decision Making, History of Management, External/Internal Environments & Corporate Culture, and Ethics/CSR/Sustainability.",
+  "question_selector_amount": 125,
+  "questions": [
+```
+- `quiz_id`: The id of the quiz, leftover from database.
+- `quiz_name`: Name of the quiz
+- `quiz_description`: The description of what the quiz is about
+- `question_selector_amount`: The amount of questions
+
 
 ```json
 [
@@ -74,13 +59,15 @@ You can use `import.py` to import questions into an existing quiz in the databas
     "question_text": "What is the capital of France?",
     "is_true_false": false,
     "correct_answer": "Paris",
-    "false_answers": ["London", "Berlin", "Madrid"]
+    "false_answers": ["London", "Berlin", "Madrid"],
+"question_id": "77fe2d7f-1e21-5992-86e9-d3e8766b09ad"
   },
   {
     "question_text": "The sky is blue.",
     "is_true_false": true,
     "correct_answer": "True",
-    "false_answers": []
+    "false_answers": [],
+    "question_id": "77fe2d7f-1e21-5992-86e9-d3e8766b09ad"
   }
 ]
 ```
@@ -89,6 +76,7 @@ You can use `import.py` to import questions into an existing quiz in the databas
 - `is_true_false`: `true` or `false` depending on question type.
 - `correct_answer`: The right answer.
 - `false_answers`: A list of incorrect answers (empty if it's True/False).
+- `question_id`: The id of the question, this was leftover from when I had a database so I had to keep it.
 
 ---
 
